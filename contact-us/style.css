@@ -1,0 +1,209 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: 'Jost', sans-serif;
+  background: #111;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ── HERO ── */
+.hero {
+  position: relative;
+  width: 100%; height: 100vh;
+  min-height: 560px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+}
+
+.hero-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    160deg,
+    rgba(10,12,18,0.45) 0%,
+    rgba(10,12,18,0.55) 50%,
+    rgba(10,12,18,0.72) 100%
+  );
+}
+
+/* ── Top bar ── */
+.hero-topbar {
+  position: relative; z-index: 10;
+  display: flex; align-items: center;
+  justify-content: space-between;
+  padding: 28px 36px;
+}
+
+/* nút ← tròn */
+.btn-back {
+  width: 40px; height: 40px;
+  border-radius: 50%;
+  background: rgba(20,22,30,0.72);
+  display: flex; align-items: center; justify-content: center;
+  color: #fff;
+  font-size: 17px;
+  font-family: 'Jost', sans-serif;
+  text-decoration: none;
+  border: none;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+.btn-back:hover { background: rgba(20,22,30,0.98); }
+
+/* nav links */
+.hero-nav {
+  display: flex; align-items: center; gap: 36px;
+}
+
+.hero-nav a {
+  font-family: 'Playfair Display', serif;   /* ← Playfair Display */
+  font-size: 13px; font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.88);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.hero-nav a:hover { color: #fff; }
+
+/* ── Hero content ── */
+.hero-content {
+  position: relative; z-index: 10;
+  margin-top: auto;
+  padding: 0 40px 56px;
+  max-width: 580px;
+}
+
+.hero-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 4vw, 52px);
+  font-weight: 400; line-height: 1.15;
+  margin-bottom: 18px; color: #fff;
+}
+
+.hero-sub {
+  font-size: 12px; font-weight: 300;
+  line-height: 1.7; color: rgba(255,255,255,0.78);
+  margin-bottom: 28px; max-width: 420px;
+}
+
+.btn-learn {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 12px 32px; border-radius: 999px;
+  background: transparent;
+  border: 1.5px solid rgba(255,255,255,0.7);
+  color: #fff; font-family: 'Jost', sans-serif;
+  font-size: 12px; font-weight: 400;
+  letter-spacing: 0.06em; cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+}
+.btn-learn:hover { background: rgba(255,255,255,0.15); border-color: #fff; }
+
+/* ── FAQ SECTION ── */
+.faq-section {
+  position: relative; width: 100%;
+  min-height: 100vh; overflow: hidden;
+  display: flex; align-items: stretch;
+}
+
+.faq-bg {
+  position: absolute; inset: 0;
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center; display: block;
+}
+
+.faq-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(8,10,16,0.72) 0%,
+    rgba(8,10,16,0.45) 50%,
+    rgba(8,10,16,0.35) 100%
+  );
+}
+
+.faq-inner {
+  position: relative; z-index: 10;
+  width: 100%; display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  align-items: center;
+  padding: 72px 40px; gap: 0;
+}
+
+/* LEFT */
+.faq-left {
+  padding-right: 32px;
+  display: flex; flex-direction: column;
+  align-items: flex-start; gap: 20px;
+}
+
+.faq-label {
+  font-size: 10.5px; font-weight: 300;
+  font-style: italic; color: rgba(255,255,255,0.65);
+  letter-spacing: 0.04em;
+}
+
+.btn-start {
+  display: inline-flex; align-items: center; justify-content: center;
+  padding: 13px 36px; border-radius: 999px;
+  background: rgba(255,255,255,0.92); border: none;
+  color: #1a1c24; font-family: 'Jost', sans-serif;
+  font-size: 13px; font-weight: 600;
+  letter-spacing: 0.1em; text-transform: uppercase;
+  cursor: pointer; transition: background 0.2s, transform 0.2s;
+}
+.btn-start:hover { background: #fff; transform: scale(1.04); }
+
+.faq-heading {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(28px, 3.8vw, 50px);
+  font-weight: 400; line-height: 1.18; color: #fff;
+}
+
+/* RIGHT: FAQ cards */
+.faq-right { display: flex; flex-direction: column; gap: 14px; }
+
+.faq-card {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.18);
+  border-radius: 10px; padding: 18px 22px;
+}
+
+.faq-q {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px; font-weight: 500;
+  color: #fff; margin-bottom: 8px; line-height: 1.4;
+}
+
+.faq-a {
+  font-family: 'Jost', sans-serif;
+  font-size: 11.5px; font-weight: 300;
+  color: rgba(255,255,255,0.78); line-height: 1.72;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .hero-topbar { padding: 20px 20px; }
+  .hero-nav { gap: 20px; }
+  .hero-nav a { font-size: 11px; }
+  .btn-back { width: 36px; height: 36px; font-size: 15px; }
+  .hero-content { padding: 0 20px 40px; }
+  .hero-title { font-size: clamp(24px, 6vw, 36px); }
+
+  .faq-inner { grid-template-columns: 1fr; padding: 48px 24px; gap: 40px; }
+  .faq-left { padding-right: 0; }
+}
+
+@media (max-width: 480px) {
+  .hero-nav a { font-size: 10px; letter-spacing: 0.06em; }
+  .hero-nav { gap: 14px; }
+}

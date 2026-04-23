@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIETRAVELON — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400;500&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <img class="bg-img"
+       src="./03d61d099d423e4b43aafd553ce5f0ef.webp"
+       alt="rice terraces Vietnam" />
+  <div class="bg-overlay"></div>
+
+  <div class="logo">VIETRAVELON</div>
+
+  <div class="card">
+    <h1 class="card-title">login here</h1>
+
+    <form class="auth-form" id="login-form">
+      <div class="field-group">
+        <input class="field-input" type="email" id="email-input" placeholder="hello@example.com" required />
+      </div>
+      <div class="field-group">
+        <label class="field-label">password</label>
+        <input class="field-input" type="password" id="password-input" placeholder="enterpassword" required />
+      </div>
+
+      <!-- nút login → homepage.html -->
+      <button class="btn-auth" type="submit">login</button>
+    </form>
+
+    <p class="switch-text">
+      Did not have an account?
+      <!-- Create an account → signin/index.html -->
+      <a class="switch-link" href="../signin/index.html">Create an account</a>
+    </p>
+  </div>
+
+  <p class="tagline">Welcome back you've been missed!</p>
+
+  <script src="script.js"></script>
+</body>
+</html>

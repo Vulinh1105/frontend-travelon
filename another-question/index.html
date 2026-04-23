@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TRAVELON — Contact Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <!-- cho font chữ đẹp hơn -->
+  <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <main class="main-section">
+    <img class="main-bg"
+         src="./Rectangle 76.png"
+         alt="snowy mountains" />
+    <div class="main-overlay"></div>
+    <!--Overlay để màu tối đi -->
+    <div class="link">
+      <a href="homepage.html">←</a>
+    </div>
+
+    <div class="main-inner">
+
+      <!-- LEFT -->
+      <div class="main-left">
+        <h1 class="main-title">You have questions<br>We have answers</h1>
+        <p class="main-sub">Discover experiences you won't find anywhere else —<br>thoughtfully designed to immerse you in the heart of the<br>destination. Soulful stories waiting to be lived</p>
+
+        <div class="info-grid">
+          <div class="info-block">
+            <h3 class="info-label">Location</h3>
+            <p class="info-text">Visit us at our headquarters:<br>Travelon Global Headquarters<br>123 Nguyen Hue Street, District 1<br>Ho Chi Minh City, Vietnam</p>
+            <p class="info-text" style="margin-top:8px;">Monday – Saturday | 08:00 – 22:00</p>
+          </div>
+          <div class="info-block">
+            <h3 class="info-label">Email</h3>
+            <p class="info-text">For general inquiries, please contact us at:</p>
+            <ul class="info-list">
+              <li>support@travelon.com</li>
+              <li>business@travelon.com (for partnerships &amp; business inquiries)</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="info-label">Contact</h3>
+            <p class="info-text">Our customer service team is available 24/7:</p>
+            <ul class="info-list">
+              <li>Hotline (International): +1 234 567 890</li>
+              <li>Vietnam Office: +84 28 1234 5678</li>
+            </ul>
+          </div>
+          <div class="info-block">
+            <h3 class="info-label">Find us on map</h3>
+            <p class="info-text">https://maps.google.com/?q=123+Nguyen+Hue+District+1+Ho+Chi+Minh+City</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM CARD -->
+      <div class="form-card">
+        <h2 class="form-title">Tell us what you need</h2>
+        <p class="form-sub">Our team is ready to assist you with every detail, big or small</p>
+
+        <form class="contact-form" id="contact-form">
+          <div class="form-row">
+            <input class="form-input" type="text" placeholder="First name" />
+            <input class="form-input" type="text" placeholder="Last name" />
+          </div>
+          <div class="form-row">
+            <input class="form-input" type="text" placeholder="Country" />
+            <input class="form-input" type="tel" placeholder="Phone number" />
+          </div>
+          <input class="form-input full" type="email" placeholder="Email address" />
+
+          <div class="inquiry-wrap">
+            <p class="inquiry-label">Type of inquiry</p>
+            <div class="inquiry-options">
+              <label class="inquiry-opt">
+                <input type="radio" name="inquiry" value="Booking" checked />
+                <span>Booking</span>
+              </label>
+              <label class="inquiry-opt">
+                <input type="radio" name="inquiry" value="General" />
+                <span>General</span>
+              </label>
+              <label class="inquiry-opt">
+                <input type="radio" name="inquiry" value="Wedding" />
+                <span>Wedding</span>
+              </label>
+              <label class="inquiry-opt">
+                <input type="radio" name="inquiry" value="Others" />
+                <span>Others</span>
+              </label>
+            </div>
+          </div>
+
+          <textarea class="form-textarea" placeholder="Message"></textarea>
+          <button class="btn-submit" type="submit">submit</button>
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4 class="footer-heading">Support</h4>
+        <ul>
+          <li><a href="#">Manage your bookings</a></li>
+          <li><a href="#">Contact Customer Service</a></li>
+          <li><a href="#">Security information center</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Discover More</h4>
+        <ul>
+          <li><a href="#">Genius loyalty program</a></li>
+          <li><a href="#">Seasonal and holiday deals</a></li>
+          <li><a href="#">Travel articles</a></li>
+          <li><a href="#">Booking.com for Business</a></li>
+          <li><a href="#">Traveller Review Awards</a></li>
+          <li><a href="#">Car rentals</a></li>
+          <li><a href="#">Find flights</a></li>
+          <li><a href="#">Restaurant reservations</a></li>
+          <li><a href="#">Booking.com for Travel Agents</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">Terms &amp; Settings</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Accessibility Policy</a></li>
+          <li><a href="#">Partner dispute resolution</a></li>
+          <li><a href="#">Modern Slavery Statement</a></li>
+          <li><a href="#">Human Rights Policy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">For Partners</h4>
+        <ul>
+          <li><a href="#">Log in to Extranet</a></li>
+          <li><a href="#">Partner help</a></li>
+          <li><a href="#">List your property</a></li>
+          <li><a href="#">Become a distribution partner</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-heading">About Us</h4>
+        <ul>
+          <li><a href="#">About Booking.com</a></li>
+          <li><a href="#">How we work</a></li>
+          <li><a href="#">Sustainability in travel</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Careers page</a></li>
+          <li><a href="#">Investor relations</a></li>
+          <li><a href="#">Contact corporate</a></li>
+          <li><a href="#">Content guidelines and reporting</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

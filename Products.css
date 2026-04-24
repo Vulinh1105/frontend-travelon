@@ -29,10 +29,19 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   gap: 20px;
   position: relative;
   z-index: 30;
+}
+
+ .brand {
+  font-family: "Playfair Display", serif;
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: #ffffff;
 }
 
 .hero-section .menu-toggle span {
@@ -284,6 +293,10 @@
   }
 }
 
+  .brand {
+    font-size: 2rem;
+  }
+
 @media (max-width: 860px) {
   .hero-section {
     background: linear-gradient(
@@ -306,6 +319,12 @@
     grid-template-columns: 40px 1fr;
     align-items: center;
     gap: 14px;
+  }
+
+  .brand {
+    justify-self: center;
+    font-size: 1.9rem;
+    margin: 0;
   }
 
   .hero-heading-wrap {

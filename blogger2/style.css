@@ -21,7 +21,7 @@ html, body {
   overflow: hidden;
 }
 
-/* ── LEFT ── */
+/*  LEFT */
 .post-left {
   position: relative;
   width: 51%;
@@ -162,7 +162,7 @@ html, body {
   border-radius: 2px;
 }
 
-/* Blogger 2 specific */
+
 .top-row {
   display: block;
   margin-bottom: 18px;
@@ -202,9 +202,7 @@ html, body {
   object-fit: cover; display: inline-block;
 }
 
-/* ══════════════════════════
-   MOBILE — max-width: 768px
-══════════════════════════ */
+
 @media (max-width: 768px) {
 
   html, body { overflow: auto; height: auto; }
@@ -261,7 +259,7 @@ html, body {
 
   .para { font-size: 14px; line-height: 1.8; }
 
-  /* Blogger2 mobile: ảnh trái thành full width */
+
   .top-img {
     width: 100%;
     height: 220px;
@@ -275,7 +273,7 @@ html, body {
     font-size: 13.5px;
   }
 
-  /* Ảnh bottom full width */
+
   .bottom-img {
     width: 100%;
     height: auto;

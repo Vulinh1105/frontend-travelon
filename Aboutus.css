@@ -1,0 +1,679 @@
+:root {
+  --text-dark: #111111;
+  --text-light: #f7f3ea;
+  --cream: #f4f0dd;
+  --footer: #1f344c;
+  --container: min(1320px, calc(100% - 64px));
+  --shadow-soft: 0 12px 32px rgba(0, 0, 0, 0.16);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", sans-serif;
+  color: var(--text-dark);
+  background: #ffffff;
+  overflow-x: hidden;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.page-shell {
+  width: 100%;
+  margin: 0;
+  border-radius: 0;
+  overflow: visible;
+  background: #ffffff;
+}
+
+.container {
+  width: var(--container);
+  margin: 0 auto;
+}
+
+.container-narrow {
+  width: min(720px, calc(100% - 64px));
+  margin: 0 auto;
+}
+
+.display,
+.brand,
+.nav-links,
+.btn-pill,
+.about-hero h1,
+.about-hero p,
+.mission-copy h2,
+.values-copy h2,
+.values-copy p,
+.employees-copy h2,
+.employees-copy p,
+.hero-story p {
+  font-family: "Playfair Display", serif;
+}
+
+.btn-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 210px;
+  padding: 18px 34px;
+  border-radius: 999px;
+  border: 1.4px solid rgba(0, 0, 0, 0.16);
+  background: rgba(248, 245, 238, 0.96);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7), 0 8px 18px rgba(0, 0, 0, 0.14);
+  color: var(--text-dark);
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.about-hero {
+  position: relative;
+  isolation: isolate;
+  background: #efe3c1 url("./pic/about-us1.png") center top / 100% auto no-repeat;
+}
+
+.about-hero::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 200px;
+  width: min(69vw, 1120px);
+  aspect-ratio: 2048 / 1393;
+  background: url("./pic/about-us2.png") right bottom / contain no-repeat;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.about-hero-inner {
+  position: relative;
+  min-height: 1470px;
+  display: grid;
+  grid-template-columns: 1.06fr 0.92fr;
+  grid-template-rows: auto auto 1fr;
+  column-gap: 80px;
+  padding-top: 22px;
+}
+
+.back-button {
+  position: absolute;
+  top: 18px;
+  left: 0;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #000000;
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.45rem;
+  line-height: 1;
+  z-index: 8;
+}
+
+.about-nav-mobile {
+  display: none;
+}
+
+.menu-toggle {
+  display: none;
+  border: 0;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  z-index: 35;
+}
+
+.menu-toggle span {
+  display: block;
+  width: 26px;
+  height: 2px;
+  margin: 6px 0;
+  background: #ffffff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+  font-size: 1.08rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+.nav-links a {
+  position: relative;
+  color: rgba(255, 255, 255, 0.94);
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 0;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.9);
+  transition: width 0.28s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+.brand {
+  font-size: 2.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: #ffffff;
+}
+
+.hero-copy-left {
+  grid-column: 1;
+  padding-top: 112px;
+}
+
+.hero-copy-left h1 {
+  margin: 0;
+  max-width: 590px;
+  font-size: 4rem;
+  line-height: 1.35;
+  letter-spacing: -0.045em;
+  color: #111111;
+}
+
+.hero-copy-right {
+  grid-column: 2;
+  padding-top: 156px;
+  max-width: 550px;
+  justify-self: end;
+}
+
+.hero-copy-right p {
+  margin: 0 0 10px;
+  font-size: 1.12rem;
+  line-height: 1.68;
+  font-weight: 500;
+  text-align: right;
+  color: rgb(0, 0, 0);
+}
+
+.hero-copy-right p:last-child {
+  margin-bottom: 0;
+}
+
+.hero-pill-wrap {
+  position: absolute;
+  top: 834px;
+  z-index: 3;
+}
+
+.hero-pill {
+  min-width: 560px;
+  padding: 13px 34px;
+  font-size: 1.08rem;
+  background:#ecd9b1;
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    0 14px 26px rgba(0, 0, 0, 1);
+}
+
+.hero-story {
+  grid-column: 1;
+  align-self: end;
+  padding-bottom: 118px;
+  padding-top: 450px;
+  max-width: 400px;
+}
+
+.hero-story p {
+  margin: 0;
+  font-size: 1.12rem;
+  line-height: 1.55;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.mission-section {
+  position: relative;
+  aspect-ratio: 2048 / 1453;
+  margin-top: -198px;
+  background: url("./pic/about-us3.png") center top / 100% auto no-repeat;
+}
+
+.mission-copy {
+  padding-top: 80px;
+  text-align: center;
+}
+
+.mission-copy h2 {
+  position: relative;
+  margin: 0;
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  color: rgb(0, 0, 0);
+}
+
+.mission-copy h2::before,
+.mission-copy h2::after {
+  content: "";
+  position: absolute;
+  top: 52%;
+  width: 180px;
+  height: 1px;
+  background: rgba(17, 17, 17, 0.35);
+}
+
+.mission-copy h2::before {
+  right: calc(100% + 18px);
+}
+
+.mission-copy h2::after {
+  left: calc(100% + 18px);
+}
+
+.mission-copy p {
+  max-width: 520px;
+  margin: 16px auto 0;
+  font-family: "Playfair Display", serif;
+  font-size: 1.12rem;
+  line-height: 1.6;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.values-section {
+  position: relative;
+  aspect-ratio: 2048 / 1453;
+  background: url("./pic/about-us4.png") center top / 100% auto no-repeat;
+}
+
+.values-copy {
+  position: absolute;
+  left: 29.5%;
+  top: 16.5%;
+  width: min(30vw, 470px);
+}
+
+.values-copy h2 {
+  margin: 0 0 20px;
+  font-size: 3.2rem;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+  color: rgb(0, 0, 0);
+}
+
+.values-copy p {
+  margin: 0;
+  max-width: 400px;
+  font-size: 1.12rem;
+  line-height: 1.65;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+}
+
+.employees-section {
+  position: relative;
+  aspect-ratio: 2048 / 1041;
+  margin-top: -250px;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.38)),
+    url("./pic/about-us5.png") center top / 100% auto no-repeat;
+}
+
+.employees-copy {
+  position: absolute;
+  right: 5.3%;
+  top: 37%;
+  width: min(32vw, 490px);
+  text-align: right;
+  color: #ffffff;
+}
+
+.employees-copy h2 {
+  margin: 0 0 20px;
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: -0.04em;
+}
+
+.employees-copy p {
+  margin: 0;
+  font-size: 1.12rem;
+  line-height: 1.65;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.88);
+}
+
+@media (max-width: 1200px) {
+  .about-hero-inner {
+    column-gap: 40px;
+  }
+
+  .hero-copy-left h1 {
+    font-size: 3.1rem;
+  }
+
+  .hero-copy-right {
+    padding-top: 132px;
+  }
+
+  .hero-copy-right p,
+  .hero-story p,
+  .values-copy p,
+  .employees-copy p,
+  .mission-copy p {
+    font-size: 0.72rem;
+  }
+
+  .hero-pill-wrap {
+    top: 61%;
+  }
+
+  .hero-pill {
+    min-width: 420px;
+    font-size: 0.92rem;
+    padding: 12px 22px;
+  }
+
+  .values-copy h2,
+  .employees-copy h2 {
+    font-size: 2.5rem;
+  }
+
+  .values-copy {
+    left: 26%;
+    width: 36vw;
+  }
+
+  .employees-copy {
+    width: 36vw;
+    top: 33%;
+  }
+}
+@media (max-width: 860px) {
+  :root {
+    --container: min(100%, calc(100% - 30px));
+  }
+
+  .about-hero {
+    background: #ecd9b1 url("./pic/hero-mobile.png") center top / cover no-repeat;
+    overflow: hidden;
+  }
+
+  .about-hero::after {
+    content: none;
+  }
+
+  .about-hero-inner {
+    min-height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding-top: 0;
+    padding-bottom: 40px;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .back-button {
+    display: none;
+  }
+
+  .about-nav-mobile {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    gap: 0;
+    padding: 16px 12px 0;
+    position: relative;
+    z-index: 30;
+  }
+
+  .menu-toggle {
+    display: block;
+    justify-self: start;
+  }
+
+  .brand {
+    grid-column: 2;
+    justify-self: center;
+    font-size: 1.9rem;
+    color: #ffffff;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    padding: 24px 20px;
+    background: rgba(15, 15, 15, 0.92);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 18px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-12px);
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+    z-index: 25;
+  }
+
+  .nav-links a {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .nav-links.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .menu-toggle.active span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .hero-copy-left,
+  .hero-copy-right,
+  .hero-story {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero-copy-left {
+    padding-top: 68px;
+  }
+
+  .hero-copy-left h1 {
+    max-width: 340px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 2.45rem;
+    line-height: 1.15;
+  }
+
+  .hero-copy-right {
+    padding-top: 24px;
+  }
+
+  .hero-copy-right p {
+    font-size: 0.82rem;
+    line-height: 1.45;
+    text-align: center;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-pill-wrap {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    margin-top: 18px;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+  }
+
+  .hero-pill {
+    min-width: 0;
+    width: calc(100% - 24px);
+    max-width: 360px;
+    padding: 10px 18px;
+    font-size: 0.72rem;
+    text-align: center;
+  }
+
+  .hero-story {
+    padding-top: 24px;
+    padding-bottom: 0;
+    margin-top: 0;
+  }
+
+  .hero-story p {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .mission-section,
+  .values-section,
+  .employees-section {
+    position: relative;
+    aspect-ratio: auto;
+    margin-top: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .mission-section {
+    min-height: 620px;
+    padding: 56px 0 40px;
+    background: url("./pic/about-us3-moblie.png") center top / cover no-repeat;
+  }
+
+  .mission-copy {
+    padding-top: 0;
+    width: min(88%, 340px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .mission-copy h2 {
+    display: block;
+    font-size: 2rem;
+  }
+
+  .mission-copy h2::before,
+  .mission-copy h2::after {
+    display: none;
+  }
+
+  .mission-copy p {
+    max-width: 270px;
+    font-size: 0.84rem;
+    line-height: 1.45;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .values-section {
+    min-height: 760px;
+    padding: 340px 0 56px;
+    background: url("./pic/about-us4-mobile.png") center top / cover no-repeat;
+  }
+
+  .values-copy {
+    position: relative;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: min(84%, 280px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .values-copy h2 {
+    font-size: 1.8rem;
+    line-height: 1.2;
+    margin-bottom: 16px;
+  }
+
+  .values-copy p {
+    max-width: 250px;
+    margin: 0 auto;
+    font-size: 0.82rem;
+    line-height: 1.45;
+  }
+
+  .employees-section {
+    min-height: 560px;
+    padding: 50px 0 40px;
+    background:
+      linear-gradient(180deg, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.38)),
+      url("./pic/about-us5.png") center top / cover no-repeat;
+  }
+
+  .employees-copy {
+    position: relative;
+    right: auto;
+    left: auto;
+    top: auto;
+    transform: none;
+    width: min(88%, 320px);
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .employees-copy h2 {
+    font-size: 2rem;
+    margin-bottom: 12px;
+  }
+
+  .employees-copy p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}

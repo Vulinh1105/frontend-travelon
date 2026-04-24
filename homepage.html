@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Homepage</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <div class="container">
+          <nav class="nav">
+            <button class="menu-toggle" aria-label="Open menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+
+            <a href="#" class="brand">Vietravelon</a>
+
+            <div class="nav-links">
+              <a href="About_us.html">About Us</a>
+              <a href="#careers">Recruitment</a>
+              <a href="#blog">Blogs</a>
+              <a href="">Login</a>
+              <a href="#contact">Contact Us</a>
+              <a href="#Yourcart">Your cart</a>
+            </div>
+          </nav>
+
+        <div class="hero-grid">
+          <div class="hero-left">
+            <div class="hero-cta-wrap">
+              <a class="btn-pill" href="#booking">SET THE DATE</a>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <h1 class="hero-title display">
+              Traveling Around The World Without Any Frustration &amp; Painless
+            </h1>
+            <p class="hero-copy">
+              Feeling stressed when you are going to travel? Yeah, sometimes I feel like that too.
+              I know that it is a bad thing, but hey, those things are always going to happen to us
+              when we are travelling, except for us bro.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-search" id="booking">
+        <div class="search-top">Find Your Journey</div>
+
+        <div class="search-bar">
+          <div class="search-item">
+            <span class="search-label">Destination</span>
+            <div class="search-value">Where are you going?</div>
+          </div>
+
+          <div class="search-item">
+            <span class="search-label">Travel Type</span>
+            <div class="search-value">Adventure travel</div>
+          </div>
+
+          <div class="search-item">
+            <span class="search-label">When?</span>
+            <div class="search-value">10 May 2026</div>
+          </div>
+
+          <div class="search-item">
+            <span class="search-label">Travellers</span>
+            <div class="search-value">2 persons</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="top-rated" id="about">
+        <div class="container">
+          <h2 class="section-title">Top Rated<br>Experiences</h2>
+
+          <div class="category-row">
+            <a href="#">World</a>
+            <a href="#">Africa</a>
+            <a href="#">Asia</a>
+            <a href="#">Europe</a>
+            <a href="#">North America</a>
+            <a href="#">South America</a>
+            <a href="#">Australia</a>
+          </div>
+
+          <div class="experience-grid">
+            <article class="experience-card">
+              <img src="./pic/everest.png" alt="Mount Everest">
+              <div class="experience-meta">Nepal</div>
+              <div class="experience-name">Mount<br>Everest</div>
+              <div class="diamond-stack">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="experience-price">from €2000</div>
+            </article>
+
+            <article class="experience-card">
+              <img src="./pic/pyramid.png" alt="The Pyramid">
+              <div class="experience-meta">Egypt</div>
+              <div class="experience-name">The<br>Pyramid</div>
+              <div class="diamond-stack">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="experience-price">from €2700</div>
+            </article>
+
+            <article class="experience-card">
+              <img src="./pic/machu.png" alt="Machu Picchu">
+              <div class="experience-meta">Peru</div>
+              <div class="experience-name">Machu<br>Pichu</div>
+              <div class="diamond-stack">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="experience-price">from €2900</div>
+            </article>
+
+            <article class="experience-card">
+              <img src="./pic/coloss.png" alt="Colosseum">
+              <div class="experience-meta">Rome</div>
+              <div class="experience-name">Colosseum</div>
+              <div class="diamond-stack">
+                <span></span><span></span><span></span><span></span>
+              </div>
+              <div class="experience-price">from €3200</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="luxury">
+        <div class="container luxury-top">
+          <div class="luxury-copy">
+            <h2>Luxury<br>Packages</h2>
+            <a href="#services" class="btn-pill">View all</a>
+          </div>
+
+          <div class="luxury-collage">
+            <article class="mini-card tall">
+              <img src="./pic/luxury1.png" alt="Paris">
+              <span>The most popular destination</span>
+            </article>
+
+            <article class="mini-card medium">
+              <img src="./pic/luxury2.png" alt="Nature">
+              <span>Your health is matter</span>
+            </article>
+
+            <article class="mini-card tall">
+              <img src="./pic/luxury3.png" alt="Coast">
+              <span>The world's most extraordinary places</span>
+            </article>
+
+            <article class="mini-card short">
+              <img src="./pic/luxury4.png" alt="Mountains">
+              <span>Experiences away from crowd</span>
+            </article>
+
+            <article class="mini-card short">
+              <img src="./pic/luxury5.png" alt="Wall">
+              <span>New destination for 2026</span>
+            </article>
+          </div>
+        </div>
+
+        <div class="luxury-bottom"></div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="container">
+          <div class="services-cta">
+            <a class="btn-pill" href="Products.html">Book With Us</a>
+          </div>
+
+          <div class="services-grid">
+            <article class="service-card">
+              <img src="./pic/supercars.png" alt="Supercars">
+              <span>Supercars</span>
+            </article>
+
+            <article class="service-card">
+              <img src="./pic/resorts.png" alt="Resorts">
+              <span>Resorts</span>
+            </article>
+
+            <article class="service-card">
+              <img src="./pic/villas.png" alt="Villas">
+              <span>Villas</span>
+            </article>
+
+            <article class="service-card">
+              <img src="./pic/yatchs.png" alt="Yachts">
+              <span>Yachts</span>
+            </article>
+
+            <article class="service-card">
+              <img src="./pic/helicopter.png" alt="Private helicopter">
+              <span>Private Helicopter</span>
+            </article>
+
+            <article class="service-card">
+              <img src="./pic/jet.png" alt="Private jet">
+              <span>Private Jet</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="why-inner">
+          <div class="why-top">
+            <h2>Why<br>Lux Trips?</h2>
+            <p>
+              As Travel Designer, we know the ins and outs of travel from who to work with,
+              where to go, when to book, and which restaurant provides the most authentic cuisine.
+            </p>
+          </div>
+
+          <div class="why-image">
+            <img src="./pic/why-background.png" alt="Luxury resort pool">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Support</h3>
+          <a href="#">Manage your bookings</a>
+          <a href="#">Contact Customer Service</a>
+          <a href="#">Security information center</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Discover More</h3>
+          <a href="#">Genius loyalty program</a>
+          <a href="#">Seasonal and holiday deals</a>
+          <a href="#">Travel articles</a>
+          <a href="#">Booking.com for Business</a>
+          <a href="#">Traveller Review Awards</a>
+          <a href="#">Car rentals</a>
+          <a href="#">Find flights</a>
+          <a href="#">Restaurant reservations</a>
+          <a href="#">Booking.com for Travel Agents</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Terms &amp; Settings</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility Policy</a>
+          <a href="#">Partner dispute resolution</a>
+          <a href="#">Modern Slavery Statement</a>
+          <a href="#">Human Rights Policy</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>For Partners</h3>
+          <a href="#">Log in to Extranet</a>
+          <a href="#">Partner help</a>
+          <a href="#">List your property</a>
+          <a href="#">Become a distribution partner</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <a href="#">About Booking.com</a>
+          <a href="#">How we work</a>
+          <a href="#">Sustainability in travel</a>
+          <a href="#">Press</a>
+          <a href="#">Careers page</a>
+          <a href="#">Investor relations</a>
+          <a href="#">Contact corporate</a>
+          <a href="#">Content guidelines and reporting</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>

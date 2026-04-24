@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Aboutus.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="about-hero">
+      <div class="container about-hero-inner">
+        <a href="homepage.html" class="back-button" aria-label="Back to homepage">←</a>
+        
+        <nav class="about-nav-mobile">
+          <button class="menu-toggle" aria-label="Open menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <a href="homepage.html" class="brand">Vietravelon</a>
+
+          <div class="nav-links">
+            <a href="aboutus-homepage-style.html" class="active">About Us</a>
+            <a href="#mission">Mission</a>
+            <a href="#values">Values</a>
+            <a href="#employees">Employees</a>
+            <a href="#contact">Contact Us</a>
+          </div>
+        </nav>
+
+        <div class="hero-copy-left">
+          <h1>Who Are We and What Does Travelon Offer to Global Travelers?</h1>
+        </div>
+
+        <div class="hero-copy-right">
+          <p>
+            Travelon is an international online travel platform that provides comprehensive travel solutions, including tour packages, flight bookings, hotel reservations, and transportation services worldwide. Established with a vision to simplify global travel, Travelon serves both individual travelers and corporate clients by offering seamless and personalized travel experiences.
+          </p>
+          <p>
+            Since its early development as a travel service provider, Travelon has grown into a global platform connecting travelers with destinations across Europe, Asia, and beyond, offering curated itineraries and end-to-end booking services.
+          </p>
+        </div>
+
+        <div class="hero-pill-wrap">
+          <div class="btn-pill hero-pill">How Did Travelon Grow from a Small Agency into a Global Platform?</div>
+        </div>
+
+        <div class="hero-story">
+          <p>
+            Travelon was founded in 2007 as a small travel agency focused on delivering high-quality tour services. Over the years, the company expanded its operations by adopting digital technologies and transforming into a full-scale online travel marketplace. <br>By leveraging innovation and customer-centric strategies, Travelon has successfully expanded its global presence, serving thousands of travelers and offering access to numerous destinations worldwide.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mission-section" id="mission">
+        <div class="mission-copy">
+          <h2>Travelon's mission</h2>
+          <p>
+            To make travel accessible, convenient, and unforgettable for everyone by delivering reliable, innovative, and personalized travel solutions.
+          </p>
+        </div>
+      </section>
+
+      <section class="values-section" id="values">
+        <div class="values-copy">
+          <h2>What Core Values Drive Travelon's Success and Customer Experience?</h2>
+          <p>
+            Travelon is built on strong core values, including a customer-centric approach, innovation, integrity, and a commitment to quality. The company always prioritizes customer satisfaction, continuously improves its technology, ensures transparency in its services, and delivers reliable travel experiences. These values help Travelon connect people with destinations around the world.
+          </p>
+        </div>
+      </section>
+
+      <section class="employees-section" id="employees">
+        <div class="employees-copy">
+          <h2>Employees</h2>
+          <p>
+            Travelon employs a diverse team of professionals, including travel consultants, IT specialists, customer service representatives, and operations managers. The company emphasizes expertise and experience, with travel advisors often having extensive knowledge of global destinations and customer needs. These employees work collaboratively to provide support before, during, and after each trip, ensuring a smooth and enjoyable journey for every customer.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-container">
+        <div class="footer-column">
+          <h3>Support</h3>
+          <a href="#">Manage your bookings</a>
+          <a href="#">Contact Customer Service</a>
+          <a href="#">Security information center</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Discover More</h3>
+          <a href="#">Genius loyalty program</a>
+          <a href="#">Seasonal and holiday deals</a>
+          <a href="#">Travel articles</a>
+          <a href="#">Booking.com for Business</a>
+          <a href="#">Traveller Review Awards</a>
+          <a href="#">Car rentals</a>
+          <a href="#">Find flights</a>
+          <a href="#">Restaurant reservations</a>
+          <a href="#">Booking.com for Travel Agents</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>Terms &amp; Settings</h3>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Accessibility Policy</a>
+          <a href="#">Partner dispute resolution</a>
+          <a href="#">Modern Slavery Statement</a>
+          <a href="#">Human Rights Policy</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>For Partners</h3>
+          <a href="#">Log in to Extranet</a>
+          <a href="#">Partner help</a>
+          <a href="#">List your property</a>
+          <a href="#">Become a distribution partner</a>
+        </div>
+
+        <div class="footer-column">
+          <h3>About Us</h3>
+          <a href="#">About Booking.com</a>
+          <a href="#">How we work</a>
+          <a href="#">Sustainability in travel</a>
+          <a href="#">Press</a>
+          <a href="#">Careers page</a>
+          <a href="#">Investor relations</a>
+          <a href="#">Contact corporate</a>
+          <a href="#">Content guidelines and reporting</a>
+          <a href="#">News</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+          navLinks.classList.toggle('active');
+          menuToggle.classList.toggle('active');
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            menuToggle.classList.remove('active');
+          });
+        });
+      }
+    </script>
+  </div>
+</body>
+</html>

@@ -21,7 +21,7 @@ html, body {
   overflow: hidden;
 }
 
-/* ── LEFT ── */
+/* LEFT */
 .post-left {
   position: relative;
   width: 51%;
@@ -150,7 +150,7 @@ html, body {
   max-width: 320px;
 }
 
-/* ── RIGHT ── */
+/*RIGHT*/
 .post-right {
   flex: 1; height: 100vh;
   background: var(--bg-right);
@@ -202,9 +202,7 @@ html, body {
   transform: translateY(0);
 }
 
-/* ══════════════════════════
-   MOBILE — max-width: 768px
-══════════════════════════ */
+
 @media (max-width: 768px) {
 
   html, body { overflow: auto; height: auto; }
